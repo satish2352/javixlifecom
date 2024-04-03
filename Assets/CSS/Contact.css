@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+
+[class*="col-"] {
+    float: left;
+    /* padding: 15px;
+    border: 1px solid; */
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* header */
+.heaerimg {
+    background-image: url('../img/home-img/bllurred-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.logo img {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+
+/* responsive navbar */
+@media (max-width:992px){
+    .responsivnav{
+        background-color: #cecaca !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width:50%;
+
+    }
+}
+@media (max-width:992px){
+.navbody ul li a{
+    color: #444444 !important;
+    font-weight: 700;
+
+}
+
+.navbody{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.navbody ul{
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    margin-inline: auto;
+}
+.logo{
+    width: 100%;
+    height: auto;
+    display: flex;
+   justify-content: center;
+    /* display: none !important; */
+}
+}
+
+@media(max-width:764px){
+    .port{
+        display: none;
+    }
+}
+
+.navbody ul li a:hover{
+    color: #00b3cc !important;
+}
+.book a:hover{
+    background-color: #036b79 !important;
+}
+
+.port {
+    background-color: #00b3cc;
+    border: 2px solid #00b3cc;
+    /* display: block; */
+    color: white;
+    padding: 15px 30px;
+}
+
+.hdone{
+    cursor: pointer;
+    font-weight:400;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+.htitle{
+    font-size: 14px;
+    margin: 0 0 4px;
+}
+
+.hr {
+    background-color: rgba(179, 176, 176, 0.623);
+}
+
+
+.soicon,
+.head-icon {
+    color: #00b3cc;
+    
+    height: 25px;
+    position: relative;
+    padding: 0;
+    float: left;
+    right: 7px;
+    margin-top: -7px;
+}
+
+
+
+/* end header */
+
+/* contact us css */
+
+.form-control{
+    background-color: rgba(0, 0, 0, .07);
+}
+.Appointment{
+    background-color: #00b3cc;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    /* width: 280px;
+    height: 60px; */
+}
+.Appointment:hover{
+background-color: #005b88;
+}
+/* .form-control{
+    background-color: rgba(0, 0, 0, .07);
+} */
+.contacticon{
+    font-size: 30px;
+    color: #00b3cc;
+}

@@ -1,0 +1,133 @@
+.heaerimg {
+    background-image: url('../img/home-img/bllurred-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.logo img {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+
+/* responsive navbar */
+@media (max-width:992px){
+    .responsivnav{
+        background-color: #cecaca;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width:50%;
+
+    }
+}
+@media (max-width:992px){
+.navbody ul li a{
+    color: #444444 !important;
+    font-weight: 700;
+
+}
+
+.navbody{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.navbody ul{
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    margin-inline: auto;
+}
+.logo{
+    width: 100%;
+    height: auto;
+    display: flex;
+   justify-content: center;
+    /* display: none !important; */
+}
+}
+
+@media(max-width:764px){
+    .port{
+        display: none;
+    }
+}
+
+
+.port {
+    background-color: #00b3cc;
+    border: 2px solid #00b3cc;
+    /* display: block; */
+    color: white;
+    padding: 15px 30px;
+}
+
+.hdone{
+    cursor: pointer;
+    font-weight:400;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+.htitle{
+    font-size: 14px;
+    margin: 0 0 4px;
+}
+
+.hr {
+    background-color: rgba(179, 176, 176, 0.623);
+}
+/* 
+@media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+      left: -90%;
+    }
+    .navbar .dropdown .dropdown:hover>ul {
+        left: -100%;
+      }
+    } */
+
+    /* @media (min-width:1400px) {
+        .container{
+            max-width: 1320px;
+        }
+    } */
+
+
+
+.soicon,
+.head-icon {
+    color: #00b3cc;
+    
+    height: 25px;
+    position: relative;
+    padding: 0;
+    float: left;
+    right: 7px;
+    margin-top: -7px;
+}
+
+.navlist ul li a{
+    font-weight: 700;
+   
+}
+
+.nav ul li a:active {
+    box-shadow: 0 -3px 0 0 #0cb8b6 inset;
+}
+
+/* end header */
+
+
+ /* body */
+
+
+ label{
+    color: #444444;
+ }
+
+ ul li{
+    font-size:  small;
+ }
