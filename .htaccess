@@ -1,0 +1,48 @@
+# Enable rewriting engine
+RewriteEngine On
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.example\.com [NC]
+RewriteRule ^(.*)$ http://example.com/$1 [L,R=301]
+
+# Redirect non-www to www
+# RewriteCond %{HTTP_HOST} ^example\.com [NC]
+# RewriteRule ^(.*)$ http://www.example.com/$1 [L,R=301]
+
+# Rewrite URLs to remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Cache control
+# ExpiresActive On
+# ExpiresByType text/html "access plus 1 week"
+
+# Error documents
+# ErrorDocument 404 /404.html
+
+# Security
+# Prevent directory browsing
+# Options -Indexes
+
+# Limit access to .htaccess
+# <Files .htaccess>
+#   order allow,deny
+#   deny from all
+# </Files>
+
+# Protect from hotlinking
+# RewriteCond %{HTTP_REFERER} !^$
+# RewriteCond %{HTTP_REFERER} !^http://(www\.)?example.com/.*$ [NC]
+# RewriteRule \.(gif|jpg|jpeg|bmp|zip|rar|mp3|flv|swf|xml|php|png|css|pdf)$ - [F]
+
+# Block access to sensitive files
+# <FilesMatch "(^\.htaccess|\.htpasswd|\.ini|\.log|\.sh)$">
+#     Order allow,deny
+#     Deny from all
+#     Satisfy All
+# </FilesMatch>
+
+# Redirect to HTTPS
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
