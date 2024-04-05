@@ -13,38 +13,37 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-    <!-- icon link -->
-    <!-- <link rel="stylesheet" href="../font-link/fontawesome-free-6.5.1-web/css/all.min.css">-->
+    <!-- font link -->
     <script src="https://kit.fontawesome.com/1030fb2953.js" crossorigin="anonymous"></script>
 
-    <!-- font link -->
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <!-- Services css -->
+    <link rel="stylesheet" href="./asset/CSS/Services.css">
 
-    <!-- css link -->
-    <link rel="stylesheet" href="./asset/CSS/header.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
 
-    <title>Javix Life &#8211; HEALTHCARE 360º PortaClinic</title>
-    <style>
-        /* .heaerimg {
-            background-image: url('./asset/img/home-img/bllurred-background.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin-bottom: 50px;
-        } */
-    </style>
+    <script>
+        $(function () {
+            //   $("#header").load("header.html"); 
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+
+
 </head>
 
 <body>
     <div class="container-fluid heaerimg ">
-        <div class="row">
+        <div class="row ">
 
-            <div class="  main-header col-12 ">
+            <div class="  main-header col-12  ">
                 <div
                     class="d-flex justify-content-xxl-around justify-content-xl-around justify-content-lg-between justify-content-md-between px-xxl-5 px-md-2 port1  mt-3">
                     <div class=" logo ">
                         <span><a href="./index.html"><img src="./asset/img/javix_logo-540x90.png" data-src=""
-                                    alt="javixlife"></span></a>
+                                    alt="javixlife"></a></span>
                     </div>
 
                     <div class="portq navbar-expand-lg ">
@@ -72,35 +71,36 @@
                     <div class="container-xxl container-xl px-xl-5">
                         <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
                         <!-- toggle btn -->
-                        <button class="navbar-toggler shadow-none border-0 mt-0" type="button"
+                        <button class="navbar-toggler shadow-none border-0 mt-0 " type="button"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                             style=" position: absolute; top: -65px; left: 0; color: #00b3cc !important; ">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
                         <!-- sidebar -->
-                        <div class="sidebar offcanvas offcanvas-start responsivnav" tabindex="-1" id="offcanvasNavbar"
+                        <div class="sidebar offcanvas offcanvas-start responsivnav" data-bs-scroll="true"
+                            data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel">
                             <!-- sidebar header -->
                             <div class="offcanvas-header text-black ">
                                 <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel"><img
                                         src="./asset/img/javix_logo-540x90.png" alt=""></h5>
-                                <button type="button" class="btn-close text-reset btn-close-white shadow-none"
+                                <button type="button" class="btn-close text-reset btn-close-dark shadow-none"
                                     data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
 
                             <!-- sidebar body -->
                             <div class="offcanvas-body navbody">
-                                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                                <ul class="navbar-nav  me-auto mb-2 mb-lg-0 fs-6 fw-bold">
                                     <li class="nav-item text-decoration-none">
                                         <a class="nav-link text-light  active " aria-current="page"
                                             href="./index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-light" href="./Services.html">Services</a>
+                                        <a class="nav-link text-light" href="./services.html">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-light" href="./Team.html">Team</a>
+                                        <a class="nav-link text-light" href="./team.html">Team</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link text-light" href="./clients.html">Clients</a>
@@ -109,7 +109,7 @@
                                         <a class="nav-link text-light" href="./careers.html">Career</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-light" href="./Gallery.html">Gallery</a>
+                                        <a class="nav-link text-light" href="./gallery.html">Gallery</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link text-light" href="./contacts.html">Contact Us</a>
@@ -139,15 +139,51 @@
                     </div>
                 </nav>
 
+                <!-- end navbar -->
+                <div class="container mt-5 mb-2 services px-xxl-5 px-md-2" for="#">
+                    <h1 style="border-top: 2px solid white; width: 60px; font-family: sans-serif; "></h1>
+                    <h1 class="text-light">Sample Collection</h1>
+                </div>
 
             </div>
+        </div>
+    </div>
 
+    <!-- body -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-5 pb-3">
+                <form action="">
+                    <p>Select Sample <br> <br><select class="form-control">
+                            <option value="Blood">Blood</option>
+                            <option value="Urine">Urine</option>
+                            <option value="Stool">Stool</option>
+                        </select></span></p>
+                    <p>Collection date<br /><br> <input type="date" class="form-control"></p>
+                    <p>Your Name (required)<br><input type="text" class="form-control"></p>
+                    <p>Your Phone (required)<br><input type="tel" class="form-control"></p>
+                    <p>Your Email (required)<br> <input type="email"
+                                name="your-email" class="form-control"></p>
+                    <p>Additional Message<br><textarea
+                                name="AdditionalMessage" cols="40" rows="10" class="form-control"
+                                aria-invalid="false"></textarea></p>
+                    <p><input type="submit" value="Submit" class="" style="background-color: #00b3cc; border: none; color: white; padding: 12px 24px;"></p>
+                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                </form>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-5 pb-3">
+                <img src="./asset/img/services/doctor-consultancy.jpg" alt="" width="90%">
+            </div>
         </div>
     </div>
 
 
-
-
+    <!-- Footer -->
+    <div>
+        <div id="footer"></div>
+    </div>
 </body>
 
 </html>
