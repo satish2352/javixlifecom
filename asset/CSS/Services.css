@@ -110,6 +110,12 @@
 }
 }
 
+@media (min-width:1280px){
+    .mainnavbar{
+        padding: 0 80px !important;
+    }
+}
+
 @media(max-width:764px){
     .port{
         display: none;
