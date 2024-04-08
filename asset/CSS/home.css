@@ -116,7 +116,7 @@ body {
 /* responsive navbar */
 @media (max-width:992px) {
     .responsivnav {
-        background-color: #cecaca;
+        background-color: #cecaca !important;
         display: flex;
         flex-direction: column;
         align-items: center;
