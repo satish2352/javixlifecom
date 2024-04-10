@@ -202,6 +202,11 @@ body {
     box-shadow: 0 -3px 0 0 #0cb8b6 inset;
 }
 
+
+.current{
+    color: #00b3cc !important;
+}
+
 /* toggler */
 .nav-tglrbtn {
     position: absolute !important;

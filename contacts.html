@@ -32,8 +32,9 @@
             //   $("#header").load("index.html"); 
             $("#footer").load("footers.html");
         });
+
     </script>
-    <style>
+    <!-- <style>
         /* Define your CSS styles for messages here */
         .success-message {
             color: green;
@@ -42,7 +43,7 @@
         .error-message {
             color: red;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -104,7 +105,7 @@
                             <div class="offcanvas-body navbody">
                                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0 fs-6 fw-bold">
                                     <li class="nav-item text-decoration-none">
-                                        <a class="nav-link text-light  active " aria-current="page"
+                                        <a class="nav-link text-light  " aria-current="page"
                                             href="./index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
@@ -123,7 +124,7 @@
                                         <a class="nav-link text-light" href="./galleries.html">Gallery</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-light" href="./contacts.html">Contact Us</a>
+                                        <a class="nav-link  active" href="./contacts.html">Contact Us</a>
                                     </li>
 
 
@@ -167,8 +168,10 @@
                 <h1 style="border-top: solid; width: 60px ; color:#00b3cc;"> </h1>
                 <h2>Feedback</h2>
             </div>
+            <!-- alert message box -->
+             <div id="message-container" class="px-5"></div>
 
-            <div class="col-lg-7 col-md-12 col-sm-12 mt-5" style="border-right:1px solid rgba(0, 0, 0, .07) ;">
+            <div class="col-lg-7 col-md-12 col-sm-12 mt-2" style="border-right:1px solid rgba(0, 0, 0, .07) ;">
                 <form action="contact-form.php" method="post">
 
                     <div class="mb-3">
@@ -196,7 +199,7 @@
                     </div>
 
                     <button type="submit" class=" mt-3 btn btn-primary ">Submit</button>
-                    <div id="message-container"></div>
+                   
                     
 
                 </form>
@@ -275,15 +278,22 @@
             var messageContainer = document.getElementById('message-container');
 
             if (status === 'success') {
-                messageContainer.innerHTML = '<p class="success-message">Thank you! Your message has been sent.</p>';
+                messageContainer.innerHTML = '<p class="success-message text-center alert alert-success alert-dismissible" role="alert">Thanks for feedback we will connect with you shortly !!  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></p>';
             } else if (status === 'error') {
-                messageContainer.innerHTML = '<p class="error-message">Oops! Something went wrong. Please try again later.</p>';
+                messageContainer.innerHTML = '<p class="error-message  text-center alert alert-danger alert-dismissible" role="alert">Oops! Something went wrong. Please try again later. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></p>';
             }
         }
 
         // Call the showMessage function when the page loads
         showMessage();
     </script>
-
+    <script>
+        $(document).ready(function() {
+          $('.nav-link').click(function() {
+            $('.nav-link').removeClass('active'); // Remove active class from all links
+            $(this).addClass('active'); // Add active class to the clicked link
+          });
+        });
+      </script>
 </body>
 </html>
