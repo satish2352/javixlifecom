@@ -125,12 +125,14 @@
 .navbody ul li a:hover{
     color: #00b3cc !important;
 }
-.nav-item a{
+/* .nav-item a{
     color: white !important;
+} */
+
+.current{
+    color: #00b3cc !important;
 }
-.nav-link.active{
-    color: #00b3cc;
-}
+
 .book a:hover{
     background-color: #036b79 !important;
 }

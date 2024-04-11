@@ -198,9 +198,9 @@ body {
 
 }
 
-.nav ul li a:active {
-    box-shadow: 0 -3px 0 0 #0cb8b6 inset;
-}
+/* .nav ul li a.active {
+    box-shadow: 0 -3px 0 0 #e7e7e7 inset;
+} */
 
 
 .current{
@@ -232,9 +232,10 @@ body {
 
 .caro-img {
     background-position: 50%;
-    background-size: cover;
+    /* background-size: cover; */
+    object-fit: cover;
     background-attachment: fixed;
-    height: 670px;
+    height: 100vh;
 
 }
 
@@ -323,6 +324,9 @@ body {
 }
 
 /* home */
+/* .nav-item a {
+    color: white !important;;
+} */
 
 .navbody ul li a:hover {
     color: #00b3cc !important;
