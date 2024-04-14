@@ -175,23 +175,23 @@
                 <form action="contact-form.php" method="post">
 
                     <div class="mb-3">
-                        <label for="name" class="form-label"> Your Name (Required)</label>
+                        <label for="name" class="form-label"> Your Name <span class="text-danger fw-bolder">*</span></label>
                         <input type="text" class="form-control" id="name" name="name" required>
                     </div>
 
 
                     <div class="mb-3">
-                        <label for="email" class="form-label ">Your Email (Required)</label>
+                        <label for="email" class="form-label ">Your Email <span class="text-danger fw-bolder">*</span></label>
                         <input type="email" class="form-control " id="email" name="email" required>
                     </div>
                     <div class="mb-3">
-                        <label for="mobile" class="form-label">Your Mobile (Required) </label>
+                        <label for="mobile" class="form-label">Your Mobile <span class="text-danger fw-bolder">*</span> </label>
                         <input type="tel" class="form-control" id="mobile" name="mobile" required>
                     </div>
 
 
                     <div class="">
-                        <label for="message" class="form-label">Your Message (Optional)</label>
+                        <label for="message" class="form-label">Your Message <span class="text-danger fw-bolder">*</span></label>
                     </div>
                     <div>
                         <textarea class="col-12 form-control" name="message" class="form-label" id="message" cols="30"
@@ -287,13 +287,6 @@
         // Call the showMessage function when the page loads
         showMessage();
     </script>
-    <script>
-        $(document).ready(function() {
-          $('.nav-link').click(function() {
-            $('.nav-link').removeClass('active'); // Remove active class from all links
-            $(this).addClass('active'); // Add active class to the clicked link
-          });
-        });
-      </script>
+
 </body>
 </html>
